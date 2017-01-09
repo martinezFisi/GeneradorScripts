@@ -23,7 +23,7 @@ import util.Formateador;
 public class GeneradorScripts {
     
     
-    public void generarScript(ListaBanco listaBanco, String strFecTerm){
+    public void generarScript(ListaBanco listaBanco, String strFecTerm, String rutaExcel){
         
         //Variables que reciben los valores ingresados por el usuario
         String codigoAdquiriente = listaBanco.getCodigoAdquiriente();
@@ -84,7 +84,7 @@ public class GeneradorScripts {
   
         //System.out.println("Script:\n"+script);
         
-        script = script + Excel.obtenerCadena( arrayCodigoListas, "C:\\OrdenEmisores.xlsx");
+        script = script + Excel.obtenerCadena( arrayCodigoListas, rutaExcel);
         
         Fichero.crearArchivo(script);
         

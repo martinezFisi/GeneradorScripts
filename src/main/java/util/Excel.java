@@ -131,7 +131,7 @@ public class Excel {
             }
 
             //System.out.println("Excel: \n"+cadena);
-            Fichero.crearArchivo(cadena);
+            //Fichero.crearArchivo(cadena);
             workbook.close();
             
         }catch(Exception e){
@@ -167,15 +167,17 @@ public class Excel {
             
             for( int i = 0; i < matrizListaBancos.size(); i++ ){
                 String bancoNombre = matrizListaBancos.get(i).get(j);
-                System.out.print( bancoNombre + ", ");
+                //System.out.print( bancoNombre + ", ");
                 Banco bancoActual = getBanco(bancoNombre);
+                
+                /*
                 script = script + cadenaInicio + "'"+arrayCodigoListas.get(j)+"', " 
                          +  (i+1) +", " + "'"+bancoActual.getBancoId()+"', "  
                          + "'"+bancoActual.getBancoEtiqueta()+"', " 
                          + "'"+bancoActual.getBancoNombre()+"', " 
                          + "'"+bancoActual.getBancoPerfil()+"', " 
                          + "'"+bancoActual.getBancoDominio()+"' " 
-                         + cadenaFin + "\n";
+                         + cadenaFin + "\n";*/
                         
             }
             
